@@ -1,0 +1,135 @@
+/*
+
+File: style.css
+Description: Styles for the Main.html page
+Author: Kalin Toussaint
+Date: May 19, 2024
+*/
+/* General styles for the entire page */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+/* Styling for headers */
+h1 {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+/* Textbox styling for paragraph container */
+.textbox {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.textbox p {
+    margin: 10px 0;
+}
+
+/* Paragraph styling */
+p {
+    padding: 10px 20px;
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Centering the lists */
+.centered-list {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.centered-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Link styling */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    table, th, td {
+        width: 100%;
+        display: block;
+    }
+    th {
+        display: none;
+    }
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
